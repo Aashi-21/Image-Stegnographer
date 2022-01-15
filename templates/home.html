@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>Home Page</h2>
+<p>Welcome back, {{ username }}!</p>
+<div class='col-md-6'>
+    <a type="button" class="btn btn-warning btn-block float-right my-1" href="{{ url_for('encode') }}">Encode</a>
+</div>
+<div class='col-md-6'>
+    <a type="button" class="btn btn-warning btn-block float-left my-1" href= "{{ url_for('decode') }}">Decode</a>
+</div>
+
+{% endblock %}

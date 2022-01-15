@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="jumbotron jumbotron-fluid mx-5 my-5 rounded-lg">
+    <div class="container">
+       
+        <hr>
+        <!--Form start-->
+        <form action="/sent" method="POST" enctype = "multipart/form-data">
+            <div class="form-group">
+                <label for="exampleFormControlFile1">📃 Send Mail to:</label>
+                <textarea class="form-control" rows="1" cols="50" name="message" required></textarea>
+                <br>
+                
+                
+            </div>
+            <button type="submit" class="btn btn-primary">Send Mail</button>
+        </form>
+        <!--Form end-->
+    </div>
+</div>
+{% endblock %}
